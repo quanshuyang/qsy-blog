@@ -6,7 +6,7 @@ author: qsy
 language: zh-CN
 timezone: Asia/Shanghai
 
-url: https://qsy-blog.netlify.app
+url: https://quanshuyang.cn
 permalink: :year/:month/:day/:title/
 pretty_urls:
   trailing_index: true
