@@ -1,0 +1,9 @@
+<section class="archive">
+  <h1>Archives</h1>
+  <% page.posts.each(function(post) { %>
+    <article class="archive-item">
+      <time datetime="<%= date_xml(post.date) %>"><%= date(post.date, config.date_format) %></time>
+      <a href="<%- url_for(post.path) %>"><%= post.title %></a>
+    </article>
+  <% }) %>
+</section>

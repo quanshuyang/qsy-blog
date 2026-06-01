@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="<%= config.language || 'zh-CN' %>">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><% if (page.title) { %><%= page.title %> | <% } %><%= config.title %></title>
+  <meta name="description" content="<%= config.description || '' %>">
+  <%- css('css/style') %>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-title" href="<%- url_for('/') %>"><%= config.title %></a>
+      <nav class="site-nav">
+        <% Object.entries(theme.menu || {}).forEach(function(item) { %>
+          <a href="<%- url_for(item[1]) %>"><%= item[0] %></a>
+        <% }) %>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <%- body %>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>&copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %></span>
+      <span>Powered by Hexo</span>
+    </div>
+  </footer>
+</body>
+</html>
