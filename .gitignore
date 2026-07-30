@@ -7,5 +7,4 @@ db.json
 debug.log
 npm-debug.log*
 hexo-server*.log
-*.png
 .env
