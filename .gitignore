@@ -1,10 +1,29 @@
+# ===== 构建/依赖 =====
 node_modules/
-public/
-.deploy_git/
-.DS_Store
+package-lock.json
+
+# ===== 本地预览日志（hexo s 产生） =====
+hexo_s.log
+hexo_s.err
+
+# ===== IDE / 编辑器 / 工具缓存 =====
+.codebuddy/
+.vscode/
+.idea/
+*.swp
 Thumbs.db
-db.json
-debug.log
-npm-debug.log*
-hexo-server*.log
-.env
+Desktop.ini
+
+# ===== 与博客无关的诊断脚本（其他项目混入） =====
+check_predatorsense.ps1
+diag_acpi_deep.bat
+diag_acpi_deep.ps1
+disable_acer_svc.ps1
+fix_battery.bat
+fix_battery.ps1
+replace_cmbatt.ps1
+rollback_cmbatt.bat
+rollback_cmbatt.ps1
+
+# ===== 本地草稿（不想发布的可放这里） =====
+source/_drafts/
